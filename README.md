@@ -1,3 +1,3 @@
 #Frontendmentor - Hilman
 
-A repository to solving challenges in frontendmentor.io
+A repository for solving challenges in frontendmentor.io
