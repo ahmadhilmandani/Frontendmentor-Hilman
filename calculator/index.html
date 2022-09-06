@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="style-theme1.css" />
+  <title>Frontend Mentor | Calculator app</title>
+  <script src="calculatorLogic.js" defer></script>
+  <script src="viewMode.js" defer></script>
+</head>
+
+<body>
+  <main>
+    <div class="first">
+
+      <h3>calc</h3>
+
+      <section>
+
+        <h6>THEME</h6>
+
+        <div>
+
+          <div class="mode-view-container">
+            <label for="1">1</label>
+            <label for="2">2</label>
+            <label for="3">3</label>
+          </div>
+
+          <div class="mode-view-container bg-mode-view">
+            <button type="button" id="1" class="pilih">1</button>
+            <button type="button" id="2">2</button>
+            <button type="button" id="3">3</button>
+          </div>
+
+        </div>
+
+
+      </section>
+
+    </div>
+
+    <div id="second">0</div>
+    <div class="third">
+      <div onclick="appendNumber('1')" class="no-1" data-value="1">1</div>
+      <div onclick="appendNumber('0')" class="no-0" data-value="0">0</div>
+      <div onclick="appendNumber('2')" class="no-2" data-value="2">2</div>
+      <div onclick="appendNumber('3')" class="no-3" data-value="3">3</div>
+      <div onclick="appendNumber('4')" class="no-4" data-value="4">4</div>
+      <div onclick="appendNumber('5')" class="no-5" data-value="5">5</div>
+      <div onclick="appendNumber('6')" class="no-6" data-value="6">6</div>
+      <div onclick="appendNumber('7')" class="no-7" data-value="7">7</div>
+      <div onclick="appendNumber('8')" class="no-8" data-value="8">8</div>
+      <div onclick="appendNumber('9')" class="no-9" data-value="9">9</div>
+      <div onclick="appendOperator('+')" class="opr-plus" data-value="+">
+        +
+      </div>
+      <div onclick="appendOperator('/')" class="opr-bagi" data-value="/">
+        /
+      </div>
+      <div onclick="appendOperator('x')" class="opr-kali" data-value="x">
+        x
+      </div>
+      <div onclick="appendOperator('-')" class="opr-kurang" data-value="-">
+        -
+      </div>
+      <div onclick="appendNumber('.')" class="dot" data-value=".">.</div>
+      <div onclick="deleteInputUser()" class="del" data-value="del">DEL</div>
+      <div onclick="reset()" class="reset" data-value="reset">RESET</div>
+      <div onclick="result()" class="equel" data-value="=">=</div>
+    </div>
+  </main>
+</body>
+
+</html>
