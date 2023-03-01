@@ -18,7 +18,13 @@
 </head>
 
 <body>
-  <div id="root" class="w-full min-h-screen relative overflow-hidden lg:p-8 sm:px-3 px-2 py-8"></div>
+  <div id="ancestor-container" class="overflow-hidden">
+    <div id="nav" class="sm:px-3 px-2 py-8 absolute top-0 left-0 right-0 z-10 bg-white lg:p-8"></div>
+    <section id="landing" class="w-full min-h-screen relative px-2 py-16 lg:px-8"></section>
+    <section id="manage-differences" class="w-full min-h-screen relative px-2 lg:px-8"></section>
+    <section id="feedback" class="mt-12 p-3 md:p-0"></section>
+    <section id="footer" class="mt-12 md:p-0"></section>
+  </div>
   <script type="module" src="/src/main.jsx"></script>
 </body>
 
