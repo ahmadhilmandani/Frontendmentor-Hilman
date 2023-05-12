@@ -179,11 +179,16 @@ function App() {
               <a
                 className='cursor-pointer dark:hover:text-white hover:text-Cust-Bg-Color'
                 onClick={(e) => {
+                  let temptClearCompleteList = [...list]
                   e.preventDefault()
                   setCategory('all')
-                  setList([])
+                  const newArrList = list.filter((list, index) => {
+                    if (list.done !== true) {
+                      return list
+                    }
+                  })
+                  setList(newArrList)
                   setListName('')
-                  setCounter(0)
                 }}>Clear Complete
               </a>
             </div>
