@@ -106,7 +106,9 @@ export const Navbar = () => {
 
 export const Footer = () => {
   return (
+
     <footer>
+
       <div className="bg-bright-red lg:flex lg:justify-between items-center px-5 py-16">
         <h1 className="text-white text-center text-3xl leading-normal mb-12 lg:mb-0">
           Simplify how your team works today.
@@ -115,12 +117,16 @@ export const Footer = () => {
           <ButtonComponent1 href={'#get-started'} text={'Get Started'} bgColor={'bg-white'} shadow='' shadowColor='' textColor={"text-bright-red"} />
         </div>
       </div>
+
       <div className="bg-very-dark-blue px-5 py-16 lg:flex lg:flex-row-reverse lg:justify-between">
-        <form action="" className="flex items-start">
-          <input type="text" className="rounded-full px-5 py-3 bg-white text-very-light-gray lg:mr-4 mr-2" placeholder="Updates in your inbox…" />
-          <button type="submit" className="px-5 py-3 text-white rounded-full text-base hover:opacity-70 font-semibold bg-bright-red">Go</button>
+        <form action="" className="flex flex-col justify-between bg-zinc-100">
+          <div className="flex items-start">
+            <input type="text" className="grow rounded-full px-5 py-3 bg-white text-very-light-gray lg:mr-4 md:mr-8 mr-3" placeholder="Updates in your inbox…" />
+            <button type="submit" className="basis-24 grow-0 shrink px-5 py-3 text-white rounded-full text-base hover:opacity-70 font-semibold bg-bright-red">Go</button>
+          </div>
+          <div className="hidden lg:block text-right">Copyright 2020. All Rights Reserved</div>
         </form>
-        <div className="flex justify-between lg:p-0 p-8">
+        <div className="flex justify-between lg:p-0 p-8 bg-red-100">
           <ul className="lg:mr-12">
             <a href=""><li className="text-white mb-4">Home</li></a>
             <a href=""><li className="text-white mb-4">Pricing</li></a>
@@ -134,7 +140,7 @@ export const Footer = () => {
             <a href=""><li className="text-white">Privacy Policy</li></a>
           </ul>
         </div>
-        <div className="flex lg:flex-col flex-col-reverse lg:justify-between">
+        <div className="flex lg:flex-col flex-col-reverse lg:justify-between bg-amber-100">
           <div className="w-fit mx-auto mt-8 lg:m-0">
             <img src="/logo-white.svg" alt="manage logo" className="object-cover" />
           </div>
@@ -147,9 +153,11 @@ export const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="bg-very-dark-blue">
-        <p className="text-center lg:text-right">Copyright 2020. All Rights Reserved</p>
+
+      <div className="bg-very-dark-blue pb-4">
+        <p className="text-center lg:text-right lg:hidden block">Copyright 2020. All Rights Reserved</p>
       </div>
     </footer>
+
   )
 }
