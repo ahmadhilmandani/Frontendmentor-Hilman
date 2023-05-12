@@ -5,6 +5,7 @@ export function List(props) {
     // const handleDrag = () => {
     //     console.log("halo")
     // }
+    // dwadaw
     if (props.category === 'all') {
         return (
             <div className='px-3 py-3 lg:px-5 lg:py-4 flex justify-between items-center text-xs md:text-base text-white border-b border-b-Cust-Very-Dark-Grayish-Blue' draggable onDrag={props.onDragReorder} onDragOver={props.onHandleDragOver} onDrop={props.onDropReorder}>
