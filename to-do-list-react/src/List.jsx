@@ -3,6 +3,7 @@ import iconCheck from './assets/img/icon-check.svg'
 
 export function List(props) {
     if (props.category === 'all') {
+        
         return (
             <div className='px-3 py-3 lg:px-5 lg:py-4 flex justify-between items-center text-xs md:text-base text-Cust-Bg-Color dark:text-white border-b dark:border-b-Cust-Very-Dark-Grayish-Blue border-b-Cust-Light-Grayish-Blue group' draggable onDrag={props.onDragReorder} onDragOver={props.onHandleDragOver} onDrop={props.onDropReorder}>
                 <div className='flex gap-3 items-center '>
