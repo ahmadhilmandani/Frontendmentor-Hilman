@@ -2,6 +2,7 @@ import iconX from './assets/img/icon-cross.svg'
 import iconCheck from './assets/img/icon-check.svg'
 
 export function List(props) {
+    
     if (props.category === 'all') {
         
         return (
