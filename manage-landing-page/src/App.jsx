@@ -35,6 +35,9 @@ export function ManageDifferences() {
         </p>
       </div>
 
+
+
+
       <div className="mt-20 lg:mt-0 lg:w-5/12">
         <div>
           <h2 className="bg-very-pale-red rounded-l-full mx-auto w-screen lg:p-0 py-3 lg:bg-transparent">
